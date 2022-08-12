@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <form action="index.html" method="post">
+        <fieldset><legend>Informações</legend>
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" autofocus>
+        <br><br><br>
+        <label>Comentários</label>
+        <textarea name="comentarios"></textarea>
+        <br><br><br>
+        <label>Sexo</label>
+
+        <input type="radio" name="sexo" value="feminino">Feminino
+        <input type="radio" name="sexo" value="masculino">Masculino
+        <input type="radio" name="sexo" value="outros" checked>Outros
+        <br><br><br>
+        <label>Preferências Musicais</label><br>
+        <label><input type="checkbox" name="musicas" value="1" checked>Funk</label>
+        <label><input type="checkbox" name="musicas" value="2">Sertanejo</label>
+        <label><input type="checkbox" name="musicas" value="3" checked>MPB</label>
+        <br><br><br>
+        <label>Cidade</label>
+        <select name="cidades">
+            <option value="nv">Naviraí</option>
+            <option value="dr" selected>Dourados</option>
+        </select>
+    </fieldset>
+        <br><br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+</body>
+</html>

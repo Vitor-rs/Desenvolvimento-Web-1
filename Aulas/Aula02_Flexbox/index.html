@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <title>Aula_01_(FlexBox)</title>
+
+    <style>
+
+        .container {
+            background-color: aqua;
+            margin-top: 5px;
+            padding: 5px;
+            display: flex;
+            /*flex-direction: row; vitor santos*/
+          
+        }
+
+        .item1 {
+            background-color: blueviolet;
+        }
+
+        .item2 {
+            background-color: antiquewhite;
+        }
+
+         .item3 {
+            background-color: aquamarine;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+  <!-- FLEX DISPLAY 
+
+     ELEMENTO 1 
+    <div class="container" style="flex-direction: column;">
+        flex-direction column
+        <div class="item1">TESTE 1</div>
+        <div class="item2">TESTE 2</div>
+        <div class="item3">TESTE 3</div>
+    </div>
+    
+     ELEMENTO 2
+    <div class="container" style="flex-direction: column-reverse;">
+        flex-direction column-reverse
+        <div class="item1">TESTE 1</div>
+        <div class="item2">TESTE 2</div>
+        <div class="item3">TESTE 3</div>
+    </div>
+
+    ELEMENTO 3
+    <div class="container" style="flex-direction: row;">
+        flex-direction row
+        <div class="item1">TESTE 1</div>
+        <div class="item2">TESTE 2</div>
+        <div class="item3">TESTE 3</div>
+    </div>
+
+    ELEMENTO 3
+    <div class="container" style="flex-direction: row-reverse;">
+        flex-direction row-reverse
+        <div class="item1">TESTE 1</div>
+        <div class="item2">TESTE 2</div>
+        <div class="item3">TESTE 3</div>
+    </div> -->
+
+
+    <div>
+
+        <div class="container" style="flex-wrap: wrap;">
+            wrap
+            <div class="item1">TESTE 1</div>
+            <div class="item2">TESTE 2</div>
+            <div class="item3">TESTE 3</div>
+            <div class="item1">TESTE 4</div>
+            <div class="item2">TESTE 5</div>
+            <div class="item3">TESTE 6</div>
+        </div>
+
+        <div class="container" style="flex-wrap: no-wrap;">
+            no-wrap
+            <div class="item1">TESTE 1</div>
+            <div class="item2">TESTE 2</div>
+            <div class="item3">TESTE 3</div>
+            <div class="item1">TESTE 4</div>
+            <div class="item2">TESTE 5</div>
+            <div class="item3">TESTE 6</div>
+        </div>
+
+        <div class="container" style="flex-wrap: wrap-reverse;">
+            wrap-reverse
+            <div class="item1">TESTE 1</div>
+            <div class="item2">TESTE 2</div>
+            <div class="item3">TESTE 3</div>
+            <div class="item1">TESTE 4</div>
+            <div class="item2">TESTE 5</div>
+            <div class="item3">TESTE 6</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

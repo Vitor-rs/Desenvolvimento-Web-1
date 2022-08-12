@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+  </head>
+  <body class="bg-gradient bg-dark">
+      <main class="container d-flex justify-content-center align-items-center vh-100">
+            <div class="form-login card w-25">
+                <div class="card-header">
+                    <h2 class="card-title text-primary">Login</h2>
+                </div>
+                <div class="card-body">
+                <form action="#" method="POST" name="form-login">
+                   <div class="row mb-3">
+                       <div class="col">
+                            <input type="email" name="email" placeholder="Email" required class="form-control">
+                       </div>
+                   </div> 
+                   <div class="row mb-3">
+                       <div class="col">
+                            <input type="password" name="senha" placeholder="Senha" required maxlength="8" minlength="6" class="form-control">
+                       </div>
+                   </div> 
+                   <div class="row">
+                       <div class="col">
+                            <button class="btn btn-primary col-12" type="button" name="btnEntrar">Entrar</button>
+                       </div>
+                   </div>
+                   <div class="row">
+                     <div class="col">
+                        <div class="mensagem alert alert-info">
+                          
+                        </div>
+                     </div>
+                   </div> 
+                </form>
+                </div>
+            </div>
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
