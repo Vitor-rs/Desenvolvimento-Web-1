@@ -16,7 +16,7 @@
 
             <div class="linha">
                 <label>Nome</label>
-                <input type="text">
+                <input type="text" id="nome">
             </div>
 
             <div class="linha">
@@ -35,9 +35,24 @@
             </div>
 
             <div id="botoes" class="linha">
-                <button type="submit" class="botao">Cadastrar</button>
+                <button type="submit" class="botao" id="enviar">Cadastrar</button>
                 <button type="reset" class="botao" id="cancelar">Cancelar</button>
             </div>
+
+            <div class="mostrar">
+
+            </div>
+
+
+            <script>
+                const enviar =  document.getElementById("enviar");
+                const nome =  document.getElementById("nome");
+                const mostrar = document.getElementById("mostrar");
+                console.log(nome);
+                enviar.addEventListener("click", function() {
+                    mostrar.innerText = nome;
+                })
+            </script>
 
         </form>
     </div>
