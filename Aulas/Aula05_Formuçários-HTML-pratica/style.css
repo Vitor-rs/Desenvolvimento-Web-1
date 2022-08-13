@@ -13,14 +13,17 @@
     margin-top: 10px;
 }
 
+/*================ BOTÕES ================*/
 #botoes {
     justify-content: space-evenly;
-} .botao {
+}
+.botao {
     height: 40px;
     border-radius: 10px;
     background-color: rgb(25, 25, 25);
     color: whitesmoke;
-} #cancelar {
+}
+#cancelar {
     background-color: rgb(200, 0, 0);
 }
 
