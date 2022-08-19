@@ -14,3 +14,12 @@ html, body {
   border-style: dashed;
   border-color: blueviolet;
 }
+
+.aula {
+  position: relative;
+  display: flexbox;
+  justify-content: space-evenly;
+  margin: 5px;
+  border-style: dashed;
+  border-color: blue;
+}
