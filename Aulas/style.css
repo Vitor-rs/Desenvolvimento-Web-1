@@ -4,12 +4,12 @@ html, body {
 }
 
 .container {
-  background-color: aquamarine;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);;
   display: flex;
   justify-content: center;
   align-content: center;
 
-  border-color: blueviolet;
+  
 }
 
 .container .aula {
@@ -19,6 +19,7 @@ html, body {
   align-content: center;
 
   border-style: groove;
+  margin: 5px;
   border-radius: 4pt;
-  border-color: blue;
+  border-color: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
 }
