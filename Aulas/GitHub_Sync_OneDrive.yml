@@ -1,0 +1,2 @@
+- name: onedrive-to-github-sync
+  uses: BenjaminMichaelis/onedrive-to-github-sync-action@v0.0.1
