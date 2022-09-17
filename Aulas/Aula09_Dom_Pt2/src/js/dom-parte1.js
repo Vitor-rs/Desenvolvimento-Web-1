@@ -21,4 +21,23 @@ function adicionarDisciplina() {
   lista.appendChild(li);
 }
 
-btnAdicionar.addEventListener('click', adicionarDisciplina)
+btnAdicionar.addEventListener("click", adicionarDisciplina);
+
+import { unidades } from "../dados/unidades.js";
+
+let selectCampus = document.querySelector("#campus");
+
+unidades.forEach(function (campus) {
+  let option = document.createElement("option");
+  option.textContent = campus.nome;
+  option.value = campus.id;
+  selectCampus.appendChild(option);
+});
+
+selectCampus.addEventListener("change", function () {
+  let id = selectCampus(value);
+
+  unidades.find(function (campus) {
+    return campus.id === id;
+  });
+});
