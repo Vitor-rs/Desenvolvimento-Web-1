@@ -40,4 +40,5 @@ selectCampus.addEventListener("change", function () {
   unidades.find(function (campus) {
     return campus.id === id;
   });
+  alert(campus.nome)
 });
