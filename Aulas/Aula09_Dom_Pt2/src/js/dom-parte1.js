@@ -1,13 +1,23 @@
-import '@picocss/pico'
-import '../css/global.css'
-import '../css/dom-parte1.css'
+import "@picocss/pico";
+import "../css/global.css";
+import "../css/dom-parte1.css";
 
-let inputDisciplina = document.querySelector("#disciplina")
-let btnAdicionar = document.querySelector(".btn-add")
-let lista = document.querySelector(".lista")
+let inputDisciplina = document.querySelector("#disciplina");
+let btnAdicionar = document.querySelector(".btn-add");
+let lista = document.querySelector(".lista");
 
-btnAdicionar.onclick = function() {
+/*btnAdicionar.onclick = function () {
+  let disciplina = inputDisciplina.value;
+  alert(disciplina);
+  let li = document.createElement("li");
+  li.textContent = disciplina;
+  lista.appendChild(li);
+};*/
 
-    alert("Clicou no botão!")
-
+function adicionarDisciplina() {
+  let disciplina = inputDisciplina.value;
+  alert(disciplina);
+  let li = document.createElement("li");
+  li.textContent = disciplina;
+  lista.appendChild(li);
 }
