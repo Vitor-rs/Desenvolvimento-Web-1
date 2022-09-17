@@ -16,8 +16,9 @@ let lista = document.querySelector(".lista");
 
 function adicionarDisciplina() {
   let disciplina = inputDisciplina.value;
-  alert(disciplina);
   let li = document.createElement("li");
   li.textContent = disciplina;
   lista.appendChild(li);
 }
+
+btnAdicionar.addEventListener('click', adicionarDisciplina)
