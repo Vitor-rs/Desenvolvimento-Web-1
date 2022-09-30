@@ -1,5 +1,5 @@
 export const nav = /*html*/ `
-    <nav class="container-fluid">
+    <nav class="container-fluid"> 
     <ul>
       <li><a class="contrast" href=" ./index.html">Desenvolvimento Web 1</a></li>
     </ul>
