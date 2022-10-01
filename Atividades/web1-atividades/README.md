@@ -1,3 +1,1 @@
 #ATIVIDADES
-
-Repositório Vitor Santos
