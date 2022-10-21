@@ -9,14 +9,25 @@
 </head>
 
 <body>
-  <!-- Cabeçalho e Menu de Navegação-->
-  <nav class="container-fluid" id="menu"></nav>
-  <!-- Fim do  Cabeçalho e Menu de Navegação-->
-  <main class="container">
-    <h1>Lista de Tarefas</h1>
-    <a
-  </main>
-  <script type="module" src="./js/lista-tarela.js"></script>
-</body>
 
-</html>
+  
+  <h1>Lista de Tarefas</h1>
+
+  <article id="card-lista-tarefas">
+
+    <div class="grid">
+      <input type="text" id="input-nova-tarefa" />
+      <button id="btn-adicionar">Adicionar</button>
+    </div>
+
+    <div>
+      <ul id="lista-tarefas">
+        <li class="tarefa">
+          <div>Estudar Javascript</div>
+          <button class="btn-excluir">Excluir</button>
+        </li>
+      </ul>
+    </div>
+
+  </article>
+</body>
