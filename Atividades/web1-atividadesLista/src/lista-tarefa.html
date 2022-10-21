@@ -10,24 +10,40 @@
 
 <body>
 
-  
-  <h1>Lista de Tarefas</h1>
+  <!-- Cabeçalho e Menu de Navegação-->
+  <nav class="container-fluid" id="menu"></nav>
 
-  <article id="card-lista-tarefas">
+  <!-- Fim do  Cabeçalho e Menu de Navegação-->
+  <main class="container">
 
-    <div class="grid">
-      <input type="text" id="input-nova-tarefa" />
-      <button id="btn-adicionar">Adicionar</button>
-    </div>
+    <!-- Aqui começa a lista de tarefas -->
+    <h1>Lista de Tarefas</h1>
 
-    <div>
-      <ul id="lista-tarefas">
-        <li class="tarefa">
-          <div>Estudar Javascript</div>
-          <button class="btn-excluir">Excluir</button>
-        </li>
-      </ul>
-    </div>
+    <article id="card-lista-tarefas">
 
-  </article>
+      <div class="grid">
+        <input type="text" id="input-nova-tarefa" />
+        <button id="btn-adicionar">Adicionar</button>
+      </div>
+
+      <div>
+        <ul id="lista-tarefas">
+          <li class="tarefa">
+            <div>Estudar Javascript</div>
+            <button class="btn-excluir">Excluir</button>
+          </li>
+        </ul>
+      </div>
+
+    </article>
+    <!-- Fim da lista de tarefas -->
+
+  </main>
+
+  <script type="module" src="./js/lista-tarefa.js"></script>
+
+
+
+
+
 </body>

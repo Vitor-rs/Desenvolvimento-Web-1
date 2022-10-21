@@ -16,15 +16,31 @@
   <!-- Fim do  Cabeçalho e Menu de Navegação-->
   <main class="container">
 
-
     <!-- Aqui começa a lista de tarefas -->
+    <h1>Lista de Tarefas</h1>
 
+    <article id="card-lista-tarefas">
+
+      <div class="grid">
+        <input type="text" id="input-nova-tarefa" />
+        <button id="btn-adicionar">Adicionar</button>
+      </div>
+
+      <div>
+        <ul id="lista-tarefas">
+          <li class="tarefa">
+            <div>Estudar Javascript</div>
+            <button class="btn-excluir">Excluir</button>
+          </li>
+        </ul>
+      </div>
+
+    </article>
     <!-- Fim da lista de tarefas -->
-    
 
   </main>
 
-  <script type="module" src="./js/lista-tarefas.js"></script>
+  <script type="module" src="./js/lista-tarefa.js"></script>
 
 </body>
 
