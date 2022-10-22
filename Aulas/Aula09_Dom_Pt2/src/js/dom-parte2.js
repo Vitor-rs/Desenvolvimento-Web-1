@@ -37,6 +37,25 @@ const selectEmoji = formFabricaEmojis.emoji;
 const btnCriarEmoji = formFabricaEmojis.criarEmoji;
 const listaEmojis = document.querySelector("#listaEmojis");
 
+emojis.forEach(function (emoji) {
+  let option = document.createElement("option");
+  option.value = emoji.icone;
+  option.textContent = `${emoji.icone} ${emoji.descricao}`;
+  selectEmoji.appendChild(option);
+});
+
+btnCriarEmoji.addEventListener("click", function (event) {
+  //   let emojiSlecionado = document.createElement("div");
+  //   emojiSlecionado.textContent = selectEmoji.value;
+  let emojiSlecionado = `<div class="emoji">${selectEmoji.value}</div>`;
+  listaEmojis.innerHTML += emojiSlecionado;
+});
+
+listaEmojis.addEventListener("dblclick", function (event) {
+    let elemento = event.target;
+  if (elemento.className === "emoji") listaEmojis.removeChild(elemento);
+});
+
 // Tópico 2 : Eventos de Teclado
 
 const infoTeclas = document.querySelector("#infoTeclas");
