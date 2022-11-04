@@ -18,16 +18,26 @@
 }
 
 #card-lista-tarefas .btn-excluir {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    font-size: 18px;
-    background-color: #d81b60;
-    border-color: #d81b60;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 12px;
+
     margin: 0;
 }
 
 #card-lista-tarefas .btn-excluir:hover {
-    background-color: #c2185b
+    border-radius: 5px;
+    width: 50px;
+
+    background-color: #e94f5c;
+
+    font-size: 18px;
 }
