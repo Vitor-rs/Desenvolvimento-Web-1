@@ -18,8 +18,11 @@
 }
 
 #card-lista-tarefas .btn-excluir {
-    width: 100px;
-    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    font-size: 18px;
     background-color: #d81b60;
     border-color: #d81b60;
     margin: 0;

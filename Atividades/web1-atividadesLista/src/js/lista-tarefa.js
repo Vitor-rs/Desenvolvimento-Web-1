@@ -1,4 +1,5 @@
 import "./nav.js";
+import "phosphor-icons";
 import "../css/lista-tarefa.css";
 
 const inputNovaTarefa = document.querySelector("#input-nova-tarefa");
@@ -12,13 +13,16 @@ btnAdicionar.addEventListener("click", function () {
   li.className = "tarefa";
   li.innerHTML = `
         <div>${descricaoTarefa}$</div>
-        <button class="btn-excluir">Excluir</button>
+        <button class="btn-excluir"><i class="ph-trash"></i></button>
     `;
   listaTarefas.appendChild(li);
 
   li.addEventListener("click", function (event) {
     //console.log(event.target)
-    if (event.target.className === "btn-excluir") {
+    if (
+      event.target.className === "btn-excluir" ||
+      event.target.className === "ph-trash"
+    ) {
       listaTarefas.removeChild(li);
     }
   });
