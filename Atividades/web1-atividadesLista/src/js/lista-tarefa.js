@@ -19,11 +19,6 @@ btnAdicionar.addEventListener("click", function () {
 
   li.addEventListener("click", function (event) {
     //console.log(event.target)
-    if (
-      event.target.className === "btn-excluir" ||
-      event.target.className === "ph-trash"
-    ) {
-      listaTarefas.removeChild(li);
-    }
+    if ( event.target.className === "btn-excluir" || event.target.className === "ph-trash") { listaTarefas.removeChild(li); }
   });
 });
