@@ -6,3 +6,16 @@
     border: 1px solid;
     color: rgb(138, 5, 5);
 }
+
+#dados {
+    margin-top: 34px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: inherit;
+    border: 1px solid;
+    border-color: rgb(55, 73, 86);
+}
+
+p {
+    margin-bottom: 5px;
+}

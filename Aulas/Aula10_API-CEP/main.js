@@ -4,7 +4,6 @@ import './estilo.css'
 const formConsultarCep = document.querySelector("#consultarCep");
 const inputCep = formConsultarCep.cep;
 const divDados = document.querySelector("#dados");
-/* const loader = `<a href="#" aria-busy="true">Consultando o CEP, aguarde...</a>`; */
 const btnConsultarCep = document.querySelector("#btnConsultarCep");
 
 formConsultarCep.addEventListener("submit", function (event) {
@@ -15,6 +14,7 @@ formConsultarCep.addEventListener("submit", function (event) {
 
 
 async function consultarCep(cep) {
+ 
   let response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
   let dadosCep = await response.json();
 
@@ -22,8 +22,10 @@ async function consultarCep(cep) {
     divDados.innerHTML = `<div class='erro'>CEP não encontrado!</div>`;
   } else {
     divDados.innerHTML = `
-      <p>Endereço: ${dadosCep.logradouro}</p>
-      <p>Localidade: ${dadosCep.localidade}</p>
+    <p>Localidade: ${dadosCep.localidade}</p>
+    <p>Endereço: ${dadosCep.logradouro}</p>
+    <p>UF: ${dadosCep.uf}</p>
+    <p>DDD: ${dadosCep.ddd}</p>
     `;
   }
   ativaLoader(false);
@@ -38,3 +40,4 @@ function ativaLoader(ativo) {
     btnConsultarCep.textContent = "Consultar";
   }
 }
+
