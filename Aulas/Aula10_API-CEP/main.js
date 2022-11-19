@@ -1,3 +1,4 @@
+import '@picocss/pico'
 const formConsultarCep = document.querySelector("#consultarCep");
 const inputCep = formConsultarCep.cep;
 const divDados = document.querySelector("#dados");
