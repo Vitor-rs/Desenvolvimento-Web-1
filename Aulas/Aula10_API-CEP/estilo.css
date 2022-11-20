@@ -6,14 +6,19 @@
     border: 1px solid;
     color: rgb(138, 5, 5);
 }
+.grid {
+    border-top: 1px solid;
+    border-top-color: #374956;
+    padding-top: 8px;
+}
 
 #dados {
-    margin-top: 34px;
+    /*margin-top: 34px;*/
     padding: 10px;
     border-radius: 8px;
     background-color: inherit;
     border: 1px solid;
-    border-color: rgb(55, 73, 86);
+    border-color: #374956;
 }
 
 p {

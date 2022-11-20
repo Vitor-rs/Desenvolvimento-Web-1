@@ -20,7 +20,7 @@
 
         <form id="consultarCep">
           <label>CEP
-            <input id="input" placeholder="digite o CEP aqui" type="text"  name="cep" maxlength="8" minlength="8" required/>
+            <input id="input" placeholder="digite o CEP aqui" type="text" onkeyup="formatarCep" name="cep" maxlength="9" minlength="9" required/>
           </label>
           <button id="btnConsultarCep">Consultar</button>
         </form>
@@ -33,6 +33,14 @@
   </main>
 
   <script type="module" src="/main.js"></script>
+  <script>
+    function formatarCep() {
+        var cep = document.getElementById('input')
+        if (cep.value.length == 5) {
+          cep.value += "-"
+        }
+      }
+  </script>
 
 </body>
 
