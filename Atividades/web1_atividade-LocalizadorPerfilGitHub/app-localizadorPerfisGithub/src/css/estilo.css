@@ -1,0 +1,9 @@
+section {
+    height: auto;
+    width: auto;
+
+}
+
+#titulo, #secao {
+    margin: 0;
+}
