@@ -1,10 +1,11 @@
 import "@picocss/pico";
-import './estilo.css'
+import "./estilo.css";
 
 const formConsultarCep = document.querySelector("#consultarCep");
 const inputCep = formConsultarCep.cep;
 const divDados = document.querySelector("#dados");
 const btnConsultarCep = document.querySelector("#btnConsultarCep");
+const input = document.querySelector("input");
 
 formConsultarCep.addEventListener("submit", function (event) {
   event.preventDefault(); // anula o comportamento padrão de envio do form
@@ -12,9 +13,7 @@ formConsultarCep.addEventListener("submit", function (event) {
   consultarCep(inputCep.value);
 });
 
-
 async function consultarCep(cep) {
- 
   let response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
   let dadosCep = await response.json();
 
@@ -41,4 +40,10 @@ function ativaLoader(ativo) {
   }
 }
 
+input.addEventListener("keypress", () => {
+  let inputLength = input.value.length;
 
+  if (inputLength == 5) {
+    input.value += '-';
+  }
+});
