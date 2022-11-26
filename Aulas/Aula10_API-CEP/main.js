@@ -15,11 +15,15 @@ formConsultarCep.addEventListener("submit", function (event) {
 
 async function consultarCep(cep) {
 
+
   let response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+
 
   let dadosCep = await response.json();
 
   console.log(response)
+
+ // console.log(response)
 
   if (dadosCep.erro) {
     divDados.innerHTML = `<div class='erro'>CEP não encontrado!</div>`;
@@ -46,18 +50,8 @@ function ativaLoader(ativo) {
 
 input.addEventListener("keypress", () => {
   let inputLength = input.value.length;
+
   if (inputLength == 5) {
     input.value += '-';
   }
 });
-
-
-
-
-
-/*input.addEventListener('submit', function() {
-  let valor = document.querySelector("input").value;
-  if (valor.) {
-    
-  }
-})*/
