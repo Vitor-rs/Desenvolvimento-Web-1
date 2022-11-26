@@ -19,7 +19,7 @@ async function consultarCep(cep) {
 
   let dadosCep = await response.json();
 
-  console.log(response)
+ // console.log(response)
 
   if (dadosCep.erro) {
     divDados.innerHTML = `<div class='erro'>CEP não encontrado!</div>`;
