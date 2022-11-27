@@ -1,0 +1,16 @@
+#container {
+    display: grid;
+    margin: auto;
+}
+h2 {
+    margin: 0px;
+}
+#titulo {
+    margin: auto;
+
+}
+
+#card {
+    display: flex;
+    margin: auto;
+}

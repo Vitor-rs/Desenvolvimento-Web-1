@@ -13,32 +13,65 @@
 
   <main id="container">
 
-    <section id="form-pagamento">
-      <header><span><h2>Detalhes do seu pagamento</h2></span></header>
+    <header id="titulo"><span>
+        <h2>Detalhes do seu pagamento</h2>
+      </span></header>
 
-      <section id="secao-form">
-        <form action="#" method="post" class="formulario">
+    <section id="card">
+      
+      <article id="lado-cartao">
 
-          <label>Nome do portador no cartâo
-            <input type="text" required>
-          </label>
+        <section id="secao-cartao">
 
-          <label>Número do cartão
-            <input type="text" required>
-          </label>
+          <h2>
+            dnjaskdnkjsghjghhjhgjhjhgjghada
+          </h2>
+          <div>asndjkashdjjhgjhgjhgjhgjkhsad</div>
 
+        </section>
 
-
-
-
-
+      </article>
 
 
-        </form>
 
-      </section>
+
+
+
+
+      <article id="lado-form">
+        <section id="section-form">
+
+
+
+          <form action="#" method="post" class="formulario">
+
+            <label>Nome do portador no cartão
+              <input name="nome-portador" type="text" maxlength="100" required>
+            </label>
+
+            <label>Número do cartão
+              <input name="numero-cartao" type="text" minlength="19" maxlength="19" required>
+            </label>
+
+            <label>Válido até
+              <input name="validade-cartao" type="text" minlength="5" maxlength="5" required>
+            </label>
+
+            <label>CVV/CVC (Código de segurança)
+              <input name="cvc" type="text" minlength="5" maxlength="5" required>
+            </label>
+
+          </form>
+
+        </section>
+      </article>
 
     </section>
+
+
+
+
+
 
 
   </main>
