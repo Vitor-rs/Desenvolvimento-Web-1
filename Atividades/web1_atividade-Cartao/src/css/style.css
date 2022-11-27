@@ -1,11 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #container {
     display: grid;
 }
 
-h2 { margin: 0px; }
-
 #titulo {
-    margin: auto;
+    margin: 10px 0px 5px 5px;
 }
 
 #painel {
@@ -13,6 +17,10 @@ h2 { margin: 0px; }
     margin: auto;
 }
 
-#lado-cartao, #secao-cartao, #lado-form,#secao-cartao {
+#lado-cartao,
+#secao-cartao,
+#lado-form,
+#secao-cartao {
     margin: 0px;
+    padding: 5px;
 }
