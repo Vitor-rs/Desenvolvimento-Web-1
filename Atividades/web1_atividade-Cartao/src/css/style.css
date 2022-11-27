@@ -1,16 +1,18 @@
 #container {
     display: grid;
-    margin: auto;
 }
-h2 {
-    margin: 0px;
-}
+
+h2 { margin: 0px; }
+
 #titulo {
     margin: auto;
-
 }
 
-#card {
+#painel {
     display: flex;
     margin: auto;
+}
+
+#lado-cartao, #secao-cartao, #lado-form,#secao-cartao {
+    margin: 0px;
 }
