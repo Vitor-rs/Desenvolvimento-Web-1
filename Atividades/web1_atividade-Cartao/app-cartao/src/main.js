@@ -11,7 +11,7 @@ const validadeCartaoText = document.querySelector(".validade-ate");
 const cvcCartaoText = document.querySelector(".cvcValor");
 
 
-numCartao.addEventListener("keyup", (e) => {
+numCartao.addEventListener("keyup", (e) => { // Expressões regulares para mascarare validar os inputs
   if (!e.target.value) {
     numCartaoText.innerText = "0000 0000 0000 0000";
   } else {
