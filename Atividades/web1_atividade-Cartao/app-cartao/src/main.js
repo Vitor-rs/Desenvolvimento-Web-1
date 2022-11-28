@@ -35,3 +35,10 @@ numCartao.addEventListener("keyup", (e) => { // Expressões regulares para masca
   }
 });
 
+portadorCard.addEventListener("keyup", (e) => { // Recebendo o nome do portador e formatando-o
+  if (!e.target.value) {
+    portadorCardText.innerHTML = "----- ----- -----";
+  } else {
+    portadorCardText.innerHTML = e.target.value.toUpperCase();
+  }
+});
