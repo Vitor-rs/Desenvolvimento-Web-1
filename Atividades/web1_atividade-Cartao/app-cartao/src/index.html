@@ -17,9 +17,26 @@
 
       <div class="container-esquerda">
         <form id="cartao">
-          <div class="container-numero">
 
+          <div class="container-numero">
+            <label>Número do cartão</label>
+            <input type="text" name="numero-cartao" id="numero-cartao" maxlength="19" placeholder="0000 0000 0000 0000">
           </div>
+
+          <div class="container-nome">
+            <label>Nome do portador</label>
+            <input type="text" name="texto-nome" id="texto-nome" maxlength="30" placeholder="---- ----" required>
+          </div>>
+
+          <div class="container-validade">
+            <label>Válido até</label>
+            <input type="text" name="texto-valido-ate" id="texto-valido-ate" maxlength="5" placeholder="02/40" required>
+          </div>
+
+          
+
+
+
         </form>
       </div>
 
