@@ -1,12 +1,12 @@
 const form = document.querySelector("#cartao");
 
 const numCartao = document.querySelector("#numero-cartao");
-const portadorCard = document.querySelector("#texto-nome");
+const portadorCartao = document.querySelector("#texto-nome");
 const validadeCartao = document.querySelector("#texto-valido-ate");
 const cvcCartao = document.querySelector("#texto-cvc");
 
 const numCartaoText = document.querySelector(".numeroValor");
-const portadorCardText = document.querySelector(".nomeValor");
+const portadorCartaoText = document.querySelector(".nomeValor");
 const validadeCartaoText = document.querySelector(".validade-ate");
 const cvcCartaoText = document.querySelector(".cvcValor");
 
@@ -35,10 +35,11 @@ numCartao.addEventListener("keyup", (e) => { // Expressões regulares para masca
   }
 });
 
-portadorCard.addEventListener("keyup", (e) => { // Recebendo o nome do portador e formatando-o
+portadorCartao.addEventListener("keyup", (e) => { // Recebendo o nome do portador e formatando-o
   if (!e.target.value) {
-    portadorCardText.innerHTML = "----- ----- -----";
+    portadorCartaoText.innerHTML = "----- ----- -----";
   } else {
-    portadorCardText.innerHTML = e.target.value.toUpperCase();
+    portadorCartaoText.innerHTML = e.target.value.toUpperCase();
   }
 });
+
