@@ -112,5 +112,13 @@ body {
 }
 
 .repositorios {
-    
+    text-decoration: none; /* removendo decorações */
+    color: #ffff;
+    background-color: #32445c;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
 }
