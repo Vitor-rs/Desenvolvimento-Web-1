@@ -33,4 +33,7 @@ body {
 
 .form-usuario input {
     width: 100%; /* ocupando 100% da largura do elemento pai */
+    display: block; /* block para distribuir como blocos */
+
+    
 }
