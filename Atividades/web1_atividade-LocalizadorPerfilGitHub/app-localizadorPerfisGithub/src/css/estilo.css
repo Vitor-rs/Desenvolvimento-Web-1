@@ -88,3 +88,7 @@ body {
     color: #ffff;
     margin-left: 2rem;
 }
+
+.info-usuario h2 {
+    margin-top: 0;
+}
