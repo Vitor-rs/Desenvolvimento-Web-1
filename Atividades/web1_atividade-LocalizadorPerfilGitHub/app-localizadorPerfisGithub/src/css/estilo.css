@@ -54,13 +54,13 @@ body {
     font-size: 1.1rem;
 }
 
-
-.form-usuario input:focus { /* CONSERTAR */
+/* Não estou conseguindo customizar esta parte comentada
+.form-usuario input:focus { 
     outline: none;
 }
-.form-usuario input::placeholder { /* CONSERTAR */
+.form-usuario input::placeholder { 
     color: #fff;
-}
+}*/
 
 .cartao {
     max-width: 800px;
@@ -122,3 +122,4 @@ body {
     margin-bottom: 0.5rem;
     display: inline-block;
 }
+
