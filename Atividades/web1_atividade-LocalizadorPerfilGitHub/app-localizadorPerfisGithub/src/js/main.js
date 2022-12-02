@@ -7,8 +7,7 @@ const form = document.querySelector("form");
 const main = document.querySelector("main");
 const pesquisar = document.querySelector("pesquisar");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const usuario = pesquisar.ariaValueMax; // pegando valores do input range
-    console.log(pesquisar.ariaValueMax)
-});
+// método para pegar o usuário
+
+
+
