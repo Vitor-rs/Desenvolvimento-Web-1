@@ -36,6 +36,12 @@ const criarCartoDeErro = (mensagem) => {
     main.innerHTML = cartaoHTML;
 }
 
+// método para captar o repositório
+const getRepositorio = async (nome_usuario) => {
+
+}
+
+
 // método para pegar o usuário
 const getUsuario = async (nome_usuario) => {
     try { // aqui estou usando o axios para fazer um fetch da api com tratamento de erro
