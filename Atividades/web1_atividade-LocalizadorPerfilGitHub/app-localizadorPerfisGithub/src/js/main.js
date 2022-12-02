@@ -16,12 +16,12 @@ const criarCartaoUsuario = (usuario) => {
             <img src="${usuario.avatar_url}" class="avatar" alt="${usuario.name}">
         </div>
         <div class="info-usuario">
-            <h2>Vitor Santos</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, maxime.</p>
+            <h2>${usuario.name}</h2>
+            <p>${usuario.bio}</p>
             <ul>
-                <li>3<strong>Seguidores</strong></li>
-                <li>5<strong>Seguindo</strong></li>
-                <li>14<strong>Repositórios</strong></li>
+                <li>${usuario.followers}<strong>Seguidores</strong></li>
+                <li>${usuario.following}<strong>Seguindo</strong></li>
+                <li>${usuario.public_repos}<strong>Repositórios</strong></li>
             </ul>
             <div class="repositorios" id="repositorio">ABC</div>
         </div>
