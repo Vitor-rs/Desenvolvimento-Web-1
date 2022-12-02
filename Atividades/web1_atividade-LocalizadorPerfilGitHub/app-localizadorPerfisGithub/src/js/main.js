@@ -10,8 +10,7 @@ const pesquisar = document.querySelector("pesquisar");
 
 // método para injetar uma template string do card do usuário
 const criarCartaoUsuario = (usuario) => {
-    const cartaoHTML = `
-        
+    const cartaoHTML = `        
     `;
 }
 
