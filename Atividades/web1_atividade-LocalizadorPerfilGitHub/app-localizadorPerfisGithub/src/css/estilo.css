@@ -50,8 +50,6 @@ body {
     padding: 1rem; /* medida usando o tamanho da fonte do elemento HTML */
     margin-bottom: 2rem;
 
-    
-
-
-
+    font-family: inherit; /* herdando as fontes de forma iterativa */
+    font-size: 1.1rem;
 }
