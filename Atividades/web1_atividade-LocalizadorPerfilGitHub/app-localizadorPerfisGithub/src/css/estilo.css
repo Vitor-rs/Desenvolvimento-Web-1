@@ -82,5 +82,9 @@ body {
     border: 4px solid #293039;
     width: 150px;
     height: 150px;
+}
 
+.info-usuario {
+    color: #ffff;
+    margin-left: 2rem;
 }
