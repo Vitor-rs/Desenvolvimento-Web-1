@@ -2,14 +2,14 @@ import "@picocss/pico";
 import axios from "axios";
 
 // recebendo a API em uma constante
-const APIGITHUB = "https://api.github.com/users/"
+const APIGITHUB = "https://api.github.com/users/";
 
 const form = document.querySelector("form");
 const main = document.querySelector("main");
 const pesquisar = document.querySelector("pesquisar");
 
 // método para injetar uma template string do card do usuário
-const criarcarduser = (user) => {
+const criarCardUser = (user) => {
     const cardHTML = `
      <div class="card">
         <div>
@@ -31,15 +31,15 @@ const criarcarduser = (user) => {
 };
 
 // método para retornar o tipo de erro caso a api falhe
-function criarCartoDeErro(mensagem) {
-    const cardHTML = `<div class="cardErro"><h1>${mensagem}</h1></div>`;
+function criarCardDeErro(mensagem) {
+    const cardHTML = `<div class="card"><h1>${mensagem}</h1></div>`;
     main.innerHTML = cardHTML;
-}
+}    
 
 // método para adicionar o repositório ao card
-function addReposNocard(mensagem) {
-    const elementoDoRepos = document.querySelector("repos");
-    repos.slice(0, 5).forEach((repo) => {
+function addReposCard(mensagem) {
+    const elementoDoRepos = document.querySelector("#repos");
+    repos.slice(0, 5).forEacg((repo) => {
         const elementoRepo = document.createElement('a');
         elementoRepo.classList.add("repo");
         elementoRepo.href = repo.html_url;
@@ -49,26 +49,25 @@ function addReposNocard(mensagem) {
     });
 }
 
-
 // método para captar o repositório
-async function getRepositorio(nome_user) {
+async function getRepositorio(username) {
     try { //
-        const { dados } = await axios(APIGITHUB + nome_user);
-        addReposNocard(dados);
+        const { data } = await axios(APIGITHUB + username + "/repos?sort=created");
+        addReposCard(data);
     } catch (error) {
-        criarCartoDeErro("Problemas ao procurar o repositório");
+        criarCardDeErro("Problemas ao procurar o repositório");
     }
 }
 
 // método para pegar o usuário
-async function getuser(nome_user) {
+async function getUser(username) {
     try { // aqui estou usando o axios para fazer um fetch da api com tratamento de erro
-        const { dados } = await axios(APIGITHUB + nome_user);
-        criarcarduser(dados);
-        getRepositorio(nome_user);
-    } catch {
+        const { data } = await axios(APIGITHUB + username);
+        criarCardUser(data);
+        getRepositorio(username);
+    } catch (error) {
         if (error.response.status == 404)
-            criarCartoDeErro("Perfil inexistente!");
+            criarCardDeErro("Perfil inexistente!");
     }
 }
 
@@ -77,7 +76,7 @@ form.addEventListener("submit", (e) => {
    e.preventDefault();
    const user = pesquisar.value;
    if(user) {
-       getuser(user);
+       getUser(user);
        pesquisar.value = ";"
    }
 });

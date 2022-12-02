@@ -55,13 +55,13 @@ body {
     font-size: 1.1rem;
 }
 
-/* Não estou conseguindo customizar esta parte comentada
+Não estou conseguindo customizar esta parte comentada
 .form-user input:focus { 
     outline: none;
 }
 .form-user input::placeholder { 
     color: #fff;
-}*/
+}
 
 .card {
     max-width: 800px;
