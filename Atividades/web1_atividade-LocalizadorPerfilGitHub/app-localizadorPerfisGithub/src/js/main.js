@@ -27,11 +27,12 @@ const criarCartaoUsuario = (usuario) => {
         </div>
     </div>        
     `;
-}
+};
 
 // método para retornar o tipo de erro caso a api falhe
 const criarCartoDeErro = (mensagem) => {
-
+    const cartaoHTML = `<div class="cartaoErro"><h1>${mensagem}</h1></div>"`;
+    main.innerHTML = cartaoHTML;
 }
 
 // método para pegar o usuário
