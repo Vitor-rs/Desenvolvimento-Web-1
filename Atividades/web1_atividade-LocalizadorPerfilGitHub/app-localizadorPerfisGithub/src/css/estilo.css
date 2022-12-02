@@ -35,5 +35,6 @@ body {
     width: 100%; /* ocupando 100% da largura do elemento pai */
     display: block; /* block para distribuir como blocos */
 
+    background-color: #d15e41
     
 }
