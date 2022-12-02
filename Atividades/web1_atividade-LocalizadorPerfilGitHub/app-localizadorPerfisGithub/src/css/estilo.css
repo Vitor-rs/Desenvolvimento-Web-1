@@ -16,6 +16,10 @@ body {
     align-items: center;
     justify-content: center;
 
+    /* unidade de medida relativa em relação à altura do elemento pai: vh => viewport's heigh*/
+    height: 100vh;
+
+    
     
 
 }
