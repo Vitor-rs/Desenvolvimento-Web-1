@@ -124,5 +124,8 @@ body {
 }
 
 @media (max-width: 500px) {
-    
+    .cartao {
+        flex-direction: column;
+        align-items: center;
+    }
 }
