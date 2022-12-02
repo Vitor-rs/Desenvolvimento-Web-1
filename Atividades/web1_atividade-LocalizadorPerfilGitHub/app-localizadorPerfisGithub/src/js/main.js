@@ -29,6 +29,11 @@ const criarCartaoUsuario = (usuario) => {
     `;
 }
 
+// método para retornar o tipo de erro caso a api falhe
+const criarCartoDeErro = (mensagem) => {
+
+}
+
 // método para pegar o usuário
 const getUsuario = async (nome_usuario) => {
     try { // aqui estou usando o axios para fazer um fetch da api com tratamento de erro
