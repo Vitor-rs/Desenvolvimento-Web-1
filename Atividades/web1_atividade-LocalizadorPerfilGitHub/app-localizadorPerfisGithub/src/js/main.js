@@ -27,6 +27,7 @@ const criarCartaoUsuario = (usuario) => {
         </div>
     </div>        
     `;
+    main.innerHTML = cartaoHTML;
 };
 
 // método para retornar o tipo de erro caso a api falhe
