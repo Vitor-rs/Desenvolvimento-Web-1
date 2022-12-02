@@ -21,7 +21,9 @@ body {
 
     /* O overflow esconde (hidden) o texto que se sobre sai */
     overflow: hidden;
-    
+
     /* resetanto a margem */
     margin: 0;
 }
+
+
