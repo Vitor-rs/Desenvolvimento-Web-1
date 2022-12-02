@@ -123,3 +123,6 @@ body {
     display: inline-block;
 }
 
+@media (max-width: 500px) {
+    
+}
