@@ -36,11 +36,21 @@ const criarCartoDeErro = (mensagem) => {
     main.innerHTML = cartaoHTML;
 }
 
-// método para captar o repositório
-const getRepositorio = async (nome_usuario) => {
+// método para adicionar o repositório ao cartao
+const addReposNoCartao = (mensagem) => {
 
 }
 
+
+// método para captar o repositório
+const getRepositorio = async (nome_usuario) => {
+    try {
+        //
+        const {dados} = await axios(APIGITHUB + nome_usuario)
+    } catch (error) {
+        criarCartoDeErro("Problemas ao procurar o repositório")
+    }
+}
 
 // método para pegar o usuário
 const getUsuario = async (nome_usuario) => {
