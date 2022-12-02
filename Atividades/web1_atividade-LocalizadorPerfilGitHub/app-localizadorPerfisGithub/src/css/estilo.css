@@ -19,7 +19,9 @@ body {
     /* unidade de medida relativa em relação à altura do elemento pai: vh => viewport's heigh*/
     height: 100vh;
 
+    /* O overflow esconde (hidden) o texto que se sobre sai */
+    overflow: hidden;
     
-
-
+    /* resetanto a margem */
+    margin: 0;
 }
