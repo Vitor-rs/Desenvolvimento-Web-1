@@ -35,6 +35,8 @@ body {
     width: 100%; /* ocupando 100% da largura do elemento pai */
     display: block; /* block para distribuir como blocos */
 
-    background-color: #d15e41
+
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     
 }
