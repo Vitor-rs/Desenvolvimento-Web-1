@@ -1,1 +1,2 @@
-import '@picocss/pico'
+import "@picocss/pico";
+import axios from "axios";
