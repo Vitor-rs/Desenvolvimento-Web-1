@@ -27,5 +27,6 @@ body {
 }
 
 .form-usuario {
-    
+    width: 95%;
+    max-width: 700px; /* limitando a largura */
 }
