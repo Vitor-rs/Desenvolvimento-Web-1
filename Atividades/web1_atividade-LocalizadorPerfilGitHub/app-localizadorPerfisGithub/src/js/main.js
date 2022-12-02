@@ -65,8 +65,11 @@ const getRepositorio = async (nome_usuario) => {
 const getUsuario = async (nome_usuario) => {
     try { // aqui estou usando o axios para fazer um fetch da api com tratamento de erro
         const {dados} = await axios(APIGITHUB + nome_usuario)
+        criarCartaoUsuario(dados);
+        getRepositorio(nome_usuario);
     } catch {
-
+    if (error.response.status == 400)
+        criarCartoDeErro("Perfil inexistente!")
     }
 }
 
