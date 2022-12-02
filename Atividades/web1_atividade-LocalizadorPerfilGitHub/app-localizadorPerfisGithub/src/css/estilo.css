@@ -53,3 +53,11 @@ body {
     font-family: inherit; /* herdando as fontes de forma iterativa */
     font-size: 1.1rem;
 }
+
+
+.form-usuario input:focus { /* CONSERTAR */
+    outline: none;
+}
+.form-usuario input::placeholder { /* CONSERTAR */
+    color: #fff;
+}
