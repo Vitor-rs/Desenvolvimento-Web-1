@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <title>Desenvolvimento Web 1</title>
+</head>
+
+<body>
+
+  <!-- Cabeçalho e Menu de Navegação-->
+  <nav class="container-fluid" id="menu"></nav>
+  <!-- Fim do  Cabeçalho e Menu de Navegação-->
+
+  <main class="container">
+
+    <!-- Aqui começa a lista de tarefas -->
+    <h1>Lista de Tarefas</h1>
+    <article id="card-lista-tarefas">
+
+      <div class="grid">
+        <input type="text" id="input-nova-tarefa"/>
+        <button id="btn-adicionar">Adicionar</button>
+      </div>
+
+      <div>
+        <ul id="lista-tarefas">
+          <!-- Aqui vai cada terefa criada -->
+        </ul>
+      </div>
+
+    </article>
+    <!-- Fim da lista de tarefas -->
+
+  </main>
+
+  <script type="module" src="./js/lista-tarefa.js"></script>
+
+
+</body>
+
+</html>

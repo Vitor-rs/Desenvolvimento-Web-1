@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Consultar CEP</title>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <article>
+
+      <header><h1>Consultar CEP</h1></header>
+
+      <section class="grid">
+
+        <form id="consultarCep">
+          <label>CEP
+            <input id="input" placeholder="digite o CEP aqui" type="text" name="cep" maxlength="9" minlength="9" required/>
+          </label>
+          <button id="btnConsultarCep">Consultar</button>
+        </form>
+
+        <div id="dados"></div>
+        
+      </section>
+    </article>
+
+  </main>
+
+  <script type="module" src="/main.js"></script>
+  
+
+</body>
+
+</html>

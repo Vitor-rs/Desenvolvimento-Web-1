@@ -1,0 +1,43 @@
+#card-lista-tarefas {
+    width: 70%;
+}
+
+#card-lista-tarefas #btn-adicionar {
+    width: 100px;
+    font-size: 12px;
+}
+
+#card-lista-tarefas .tarefa {
+    padding: 5px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+
+#card-lista-tarefas .btn-excluir {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 12px;
+
+    margin: 0;
+}
+
+#card-lista-tarefas .btn-excluir:hover {
+    border-radius: 5px;
+    width: 50px;
+
+    background-color: #e94f5c;
+
+    font-size: 18px;
+}

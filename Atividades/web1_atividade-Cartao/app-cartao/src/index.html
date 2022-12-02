@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="/main.js"></script>
+  <title>App Cartão</title>
+</head>
+
+<body>
+  <main class="container">
+    <section class="interface">
+
+
+
+
+      <div class="container-esquerda">
+        <form id="cartao">
+
+          <div class="container-numero">
+            <label>Número do cartão</label>
+            <input type="text" name="numero-cartao" id="numero-cartao" maxlength="19" placeholder="0000 0000 0000 0000">
+          </div>
+
+          <div class="container-nome">
+            <label>Nome do portador</label>
+            <input type="text" name="texto-nome" id="texto-nome" maxlength="40" placeholder="----- ----- -----"
+              required>
+          </div>>
+
+          <div class="container-infos">
+            <div class="container-validade">
+              <label>Válido até</label>
+              <input type="text" name="texto-valido-ate" id="texto-valido-ate" maxlength="5" placeholder="--/--"
+                required>
+            </div>
+            <div class="container-cvc">
+              <label>CVC</label>
+              <input type="text" name="texto-cvc" id="texto-cvc" maxlength="3" placeholder="****" required>
+            </div>
+          </div>
+
+          <input type="submit" value="Adicionar" id="adicionar">
+
+        </form>
+      </div>
+      <div class="container-direita">
+        <div id="card">
+          <div class="interno">
+
+            <img class="aproximacao" src="/img/aprox.png" alt="aproximação">
+
+            <div class="numero-cartao">
+              <div class="numeroValor">0000 0000 0000 0000</div>
+            </div>
+
+            <div class="portador-cartao">
+              <label>Nome do portador</label>
+              <div class="nomeValor">----- ----- -----</div>
+            </div>
+
+            <div class="info-cartao">
+
+              <div class="validade-cartao">
+                <label>Válido até</label>
+                <div class="validade-ate">--/--</div>
+              </div>
+
+              <div class="cvc">
+                <label>CVV</label>
+                <div class="cvcValor">***</div>
+              </div>
+              
+            </div>
+
+            <img class="chip" src="img/chip.png" alt="chip">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
