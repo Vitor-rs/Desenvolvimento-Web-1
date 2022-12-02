@@ -23,7 +23,7 @@ const criarCartaoUsuario = (usuario) => {
                 <li>${usuario.following}<strong>Seguindo</strong></li>
                 <li>${usuario.public_repos}<strong>Repositórios</strong></li>
             </ul>
-            <div class="repositorios" id="repositorio">ABC</div>
+            <div class="repo" id="repos">ABC</div>
         </div>
     </div>        
     `;
@@ -38,7 +38,15 @@ const criarCartoDeErro = (mensagem) => {
 
 // método para adicionar o repositório ao cartao
 const addReposNoCartao = (mensagem) => {
-
+    const elementoDoRepos = document.querySelector("repos");
+    repos.slice(0,5).forEach((repo) => {
+        const elementoRepo = document.createElement('a');
+        elementoRepo.classList.add("repo");
+        elementoRepo.href = repo.html_url;
+        elementoRepo.target = "_blank";
+        elementoRepo.innerHTML = repo.name;
+        elementoDoRepos.appendChild(elementoRepo);
+    });
 }
 
 
