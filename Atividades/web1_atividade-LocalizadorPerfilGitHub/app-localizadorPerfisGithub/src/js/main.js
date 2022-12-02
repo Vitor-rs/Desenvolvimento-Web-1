@@ -9,35 +9,35 @@ const main = document.querySelector("main");
 const pesquisar = document.querySelector("pesquisar");
 
 // método para injetar uma template string do card do usuário
-const criarCartaoUsuario = (usuario) => {
-    const cartaoHTML = `
-     <div class="cartao">
+const criarcarduser = (user) => {
+    const cardHTML = `
+     <div class="card">
         <div>
-            <img src="${usuario.avatar_url}" class="avatar" alt="${usuario.name}">
+            <img src="${user.avatar_url}" class="avatar" alt="${user.name}">
         </div>
-        <div class="info-usuario">
-            <h2>${usuario.name}</h2>
-            <p>${usuario.bio}</p>
+        <div class="info-user">
+            <h2>${user.name}</h2>
+            <p>${user.bio}</p>
             <ul>
-                <li>${usuario.followers}<strong>Seguidores</strong></li>
-                <li>${usuario.following}<strong>Seguindo</strong></li>
-                <li>${usuario.public_repos}<strong>Repositórios</strong></li>
+                <li>${user.followers}<strong>Seguidores</strong></li>
+                <li>${user.following}<strong>Seguindo</strong></li>
+                <li>${user.public_repos}<strong>Repositórios</strong></li>
             </ul>
             <div class="repo" id="repos">ABC</div>
         </div>
     </div>        
     `;
-    main.innerHTML = cartaoHTML;
+    main.innerHTML = cardHTML;
 };
 
 // método para retornar o tipo de erro caso a api falhe
 function criarCartoDeErro(mensagem) {
-    const cartaoHTML = `<div class="cartaoErro"><h1>${mensagem}</h1></div>`;
-    main.innerHTML = cartaoHTML;
+    const cardHTML = `<div class="cardErro"><h1>${mensagem}</h1></div>`;
+    main.innerHTML = cardHTML;
 }
 
-// método para adicionar o repositório ao cartao
-function addReposNoCartao(mensagem) {
+// método para adicionar o repositório ao card
+function addReposNocard(mensagem) {
     const elementoDoRepos = document.querySelector("repos");
     repos.slice(0, 5).forEach((repo) => {
         const elementoRepo = document.createElement('a');
@@ -51,21 +51,21 @@ function addReposNoCartao(mensagem) {
 
 
 // método para captar o repositório
-async function getRepositorio(nome_usuario) {
+async function getRepositorio(nome_user) {
     try { //
-        const { dados } = await axios(APIGITHUB + nome_usuario);
-        addReposNoCartao(dados);
+        const { dados } = await axios(APIGITHUB + nome_user);
+        addReposNocard(dados);
     } catch (error) {
         criarCartoDeErro("Problemas ao procurar o repositório");
     }
 }
 
 // método para pegar o usuário
-async function getUsuario(nome_usuario) {
+async function getuser(nome_user) {
     try { // aqui estou usando o axios para fazer um fetch da api com tratamento de erro
-        const { dados } = await axios(APIGITHUB + nome_usuario);
-        criarCartaoUsuario(dados);
-        getRepositorio(nome_usuario);
+        const { dados } = await axios(APIGITHUB + nome_user);
+        criarcarduser(dados);
+        getRepositorio(nome_user);
     } catch {
         if (error.response.status == 404)
             criarCartoDeErro("Perfil inexistente!");
@@ -75,9 +75,9 @@ async function getUsuario(nome_usuario) {
 // função para sub,eter as requisições
 form.addEventListener("submit", (e) => {
    e.preventDefault();
-   const usuario = pesquisar.value;
-   if(usuario) {
-       getUsuario(usuario);
+   const user = pesquisar.value;
+   if(user) {
+       getuser(user);
        pesquisar.value = ";"
    }
 });

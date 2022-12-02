@@ -27,12 +27,12 @@ body {
     margin: 0;
 }
 
-.form-usuario {
+.form-user {
     width: 95%;
     max-width: 700px; /* limitando a largura */
 }
 
-.form-usuario input {
+.form-user input {
     width: 100%;/* ocupando 100% da largura do elemento pai */
     display: block;/* block para distribuir como blocos */
 
@@ -56,14 +56,14 @@ body {
 }
 
 /* Não estou conseguindo customizar esta parte comentada
-.form-usuario input:focus { 
+.form-user input:focus { 
     outline: none;
 }
-.form-usuario input::placeholder { 
+.form-user input::placeholder { 
     color: #fff;
 }*/
 
-.cartao {
+.card {
     max-width: 800px;
     /* fundo do cartão */
     background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
@@ -85,16 +85,16 @@ body {
     height: 150px;
 }
 
-.info-usuario {
+.info-user {
     color: #ffff;
     margin-left: 2rem;
 }
 
-.info-usuario h2 {
+.info-user h2 {
     margin-top: 0;
 }
 
-.info-usuario ul {
+.info-user ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between; /* distribuindo os elementos igualmente na horizontal
@@ -102,12 +102,12 @@ body {
     max-width: 400px;
 }
 
-.info-usuario ul li {
+.info-user ul li {
     display: flex;
     align-items: center;
 }
 
-.info-usuario ul li strong {
+.info-user ul li strong {
     font-size: 0.9rem;
     margin-left: 0.5rem;
 }
@@ -125,14 +125,14 @@ body {
 }
 
 @media (max-width: 500px) {
-    .cartao {
+    .card {
         flex-direction: column;
         align-items: center;
     }
-    .form-usuario {
+    .form-user {
         max-width: 400px;
     }
-    .info-usuario {
+    .info-user {
         margin-left: 0;
     }
 }
