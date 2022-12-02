@@ -55,6 +55,7 @@ const getRepositorio = async (nome_usuario) => {
     try {
         //
         const {dados} = await axios(APIGITHUB + nome_usuario)
+        addReposNoCartao(dados);
     } catch (error) {
         criarCartoDeErro("Problemas ao procurar o repositório")
     }
@@ -68,5 +69,15 @@ const getUsuario = async (nome_usuario) => {
 
     }
 }
+
+// função para sub,eter as requisições
+form.addEventListener("submit", (e) => {
+   e.preventDefault();
+   const usuario = pesquisar.value;
+   if(usuario) {
+       getUsuario(usuario);
+       pesquisar.value = ";"
+   }
+});
 
 
