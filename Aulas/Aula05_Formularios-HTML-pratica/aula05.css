@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    background-color: rgba(25, 25, 25, 0.8);
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/*================ BOTÕES ================*/
+#botoes {
+    justify-content: space-evenly;
+}
+.botao {
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(25, 25, 25);
+    color: whitesmoke;
+}
+#cancelar {
+    background-color: rgb(200, 0, 0);
+}
+
+input {
+    border-radius: 10px;
+}
