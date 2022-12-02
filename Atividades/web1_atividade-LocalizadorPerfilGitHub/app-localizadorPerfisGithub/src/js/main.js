@@ -1,4 +1,3 @@
-import axios from "axios";
 import "@picocss/pico";
 
 // recebendo a API em uma constante
@@ -11,5 +10,5 @@ const pesquisar = document.querySelector("pesquisar");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     const usuario = pesquisar.ariaValueMax; // pegando valores do input range
-    // console.log(pesquisar.ariaValueMax)
+    console.log(pesquisar.ariaValueMax)
 });
