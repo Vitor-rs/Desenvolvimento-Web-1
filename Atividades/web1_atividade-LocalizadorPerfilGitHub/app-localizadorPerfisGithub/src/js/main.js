@@ -13,7 +13,7 @@ const criarCartaoUsuario = (usuario) => {
     const cartaoHTML = `
      <div class="cartao">
         <div>
-            <img src="./img/perfil.jpg" class="avatar" alt="#">
+            <img src="${usuario.avatar_url}" class="avatar" alt="${usuario.name}">
         </div>
         <div class="info-usuario">
             <h2>Vitor Santos</h2>
@@ -32,7 +32,7 @@ const criarCartaoUsuario = (usuario) => {
 // método para pegar o usuário
 const getUsuario = async (nome_usuario) => {
     try { // aqui estou usando o axios para fazer um fetch da api com tratamento de erro
-        const { dados } = await axios(APIGITHUB + nome_usuario)
+        const {dados} = await axios(APIGITHUB + nome_usuario)
     } catch {
 
     }
