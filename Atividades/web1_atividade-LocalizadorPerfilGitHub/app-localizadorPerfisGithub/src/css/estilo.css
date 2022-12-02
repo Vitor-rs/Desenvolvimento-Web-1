@@ -95,7 +95,9 @@ body {
 
 .info-usuario ul {
     list-style-type: none;
+    display: flex;
     justify-content: space-between; /* distribuindo os elementos igualmente na horizontal
     "colando" o primmeiro e o último nas extremidades */
-
+    max-width: 400;
 }
+
