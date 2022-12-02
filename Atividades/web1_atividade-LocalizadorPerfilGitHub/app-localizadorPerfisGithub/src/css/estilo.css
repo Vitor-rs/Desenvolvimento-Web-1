@@ -92,3 +92,8 @@ body {
 .info-usuario h2 {
     margin-top: 0;
 }
+
+.info-usuario ul {
+    list-style-type: none;
+    
+}
