@@ -8,4 +8,7 @@ const form = document.querySelector("form");
 const main = document.querySelector("main");
 const pesquisar = document.querySelector("pesquisar");
 
-form.addEventListener()
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const usuario = pesquisar.ariaValueMax; // pegando valores do input range
+});
