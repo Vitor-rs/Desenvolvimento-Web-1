@@ -35,6 +35,23 @@ body {
     width: 100%;/* ocupando 100% da largura do elemento pai */
     display: block;/* block para distribuir como blocos */
 
+    /* fundo do input */
     background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
-    box-shadow: 0px 12px 19px -7px rgba(0, 0, 0, 0.76);
+    /* sombra do imput */
+    box-shadow: 0px 10px 15px -7px rgba(0, 0, 0, 0.60);
+
+    /* borda */
+    border: none;
+    border-radius: 10px;
+
+    /* fonte */
+    color: #ffff;
+
+    padding: 1rem; /* medida usando o tamanho da fonte do elemento HTML */
+    margin-bottom: 2rem;
+
+    
+
+
+
 }
