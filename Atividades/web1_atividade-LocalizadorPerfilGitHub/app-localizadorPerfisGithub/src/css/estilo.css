@@ -1,11 +1,1 @@
-.container {
-
-    margin-left: auto;
-    margin-right: auto;
-
-
-}
-
-#titulo, #secao {
-    margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap');
