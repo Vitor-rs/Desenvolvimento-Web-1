@@ -32,7 +32,7 @@ const criarCartaoUsuario = (usuario) => {
 
 // método para retornar o tipo de erro caso a api falhe
 const criarCartoDeErro = (mensagem) => {
-    const cartaoHTML = `<div class="cartaoErro"><h1>${mensagem}</h1></div>"`;
+    const cartaoHTML = `<div class="cartaoErro"><h1>${mensagem}</h1></div>`;
     main.innerHTML = cartaoHTML;
 }
 
@@ -52,8 +52,7 @@ const addReposNoCartao = (mensagem) => {
 
 // método para captar o repositório
 const getRepositorio = async (nome_usuario) => {
-    try {
-        //
+    try {//
         const {dados} = await axios(APIGITHUB + nome_usuario)
         addReposNoCartao(dados);
     } catch (error) {
@@ -68,7 +67,7 @@ const getUsuario = async (nome_usuario) => {
         criarCartaoUsuario(dados);
         getRepositorio(nome_usuario);
     } catch {
-    if (error.response.status == 400)
+    if (error.response.status == 404)
         criarCartoDeErro("Perfil inexistente!")
     }
 }
