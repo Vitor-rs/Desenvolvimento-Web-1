@@ -10,6 +10,12 @@ body {
     color: #ffff;
     font-family: 'Poppins', sans-serif;
 
+    /* coloquei o flex para melhor redimencionar e reposicionar o este container */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     
 
 }
