@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #293029;
+    /*background-color: #293029;*/
+    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     color: #ffff;
     font-family: 'Poppins', sans-serif;
 
