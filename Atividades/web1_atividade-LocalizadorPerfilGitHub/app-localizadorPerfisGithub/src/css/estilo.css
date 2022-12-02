@@ -78,5 +78,9 @@ body {
 }
 
 .avatar {
-    
+    border-radius: 15%;
+    border: 4px solid #293039;
+    width: 150px;
+    height: 150px;
+
 }
