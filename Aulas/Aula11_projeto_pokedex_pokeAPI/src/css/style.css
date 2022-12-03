@@ -24,16 +24,17 @@ header img {
 }
 
 .pokedex {
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin:auto;
     box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px;
 }
 
 .formLocalizar {
-    width: 50%;
+    margin: 20px 0 20px 20px;
+    width: 400px;
     padding: 20px;
     gap: 20px;
     display: flex;
@@ -55,8 +56,18 @@ header img {
 }
 
 .display {
-    width: 50%;
+    width:75%;
+    margin: 20px 20px 20px;
+    display: inline-flex;
+    /*gap: 10px;*/
     background-color: antiquewhite;
+}
+
+.cardPokemon {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 8px;
 }
 
 main {
