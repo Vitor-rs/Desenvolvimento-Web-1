@@ -22,15 +22,15 @@ async function localizarPokemon(termoBusca) {
 }
 
 function criarCartao(pokemon) {
-    /* criando elemento container div */
-    const cartaoPokemon = document.createElement("div");
-    cartaoPokemon.className = "cartaoPokemon";
+  /* criando elemento container div */
+  const cartaoPokemon = document.createElement("div");
+  cartaoPokemon.className = "cartaoPokemon";
 
-    cartaoPokemon.innerHTML = `
+  cartaoPokemon.innerHTML = `
         <div class="cardPokemon">
         <img class="pokemonSprite" src="${pokemon.sprites.front_default}"/>
         <h2>${pokemon.name}</h2>
         </div>
     `;
-    pokedexDisplay.appendChild(cartaoPokemon);
+  pokedexDisplay.appendChild(cartaoPokemon);
 }
