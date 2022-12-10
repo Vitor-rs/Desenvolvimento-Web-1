@@ -10,10 +10,11 @@ const portadorCartaoText = document.querySelector(".nomeValor");
 const validadeCartaoText = document.querySelector(".validade-ate");
 const cvcCartaoText = document.querySelector(".cvcValor");
 
+// Funcão para formatar e validar o número do cartão
 numCartao.addEventListener("keyup", (e) => {
   // Expressões regulares para mascarar e validar os inputs
   if (!e.target.value) {
-    numCartaoText.innerText = "0000 0000 0000 0000";
+    numCartaoText.innerText = "xxxx xxxx xxxx xxxx";
   } else {
     const valuesOfInput = e.target.value.replaceAll(" ", "");
 
