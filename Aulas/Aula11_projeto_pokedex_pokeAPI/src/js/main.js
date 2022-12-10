@@ -27,10 +27,10 @@ function criarCartao(pokemon) {
   cartaoPokemon.className = "cartaoPokemon";
 
   cartaoPokemon.innerHTML = `
-        <div class="cardPokemon">
+        
         <img class="pokemonSprite" src="${pokemon.sprites.front_default}"/>
         <h2>${pokemon.name}</h2>
-        </div>
+        
     `;
   pokedexDisplay.appendChild(cartaoPokemon);
 }

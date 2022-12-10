@@ -58,7 +58,7 @@ header img {
 .display {
     width:75%;
     margin: 20px 20px 20px;
-    display: inline-flex;
+    display: flex;
     /*gap: 10px;*/
     background-color: antiquewhite;
 }
