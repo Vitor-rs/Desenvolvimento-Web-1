@@ -1,3 +1,10 @@
+import {
+  isValid,
+  isExpirationDateValid,
+  isSecurityCodeValid,
+  getCreditCardNameByNumber,
+} from "creditcard.js";
+
 const form = document.querySelector("#cartao");
 
 const numCartao = document.querySelector("#numero-cartao");
