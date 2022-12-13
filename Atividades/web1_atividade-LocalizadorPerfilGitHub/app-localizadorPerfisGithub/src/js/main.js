@@ -46,7 +46,7 @@ form.addEventListener("submit", (e) => {
   const usuario = pesquisa.value;
 
   if (usuario) {
-    getUser(user);
+    getUser(usuario);
     pesquisa.value = "";
   }
 });
