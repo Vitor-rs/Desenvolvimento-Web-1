@@ -76,3 +76,14 @@ body {
 .info-usuario ul li {
     list-style: none;
 }
+
+#form input {
+    padding: 12px;
+    border: none;
+    background: #F6F6F6;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    min-width: 250px;
+    border: none;
+}
+
