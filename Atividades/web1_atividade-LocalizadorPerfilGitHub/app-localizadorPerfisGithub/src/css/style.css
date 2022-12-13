@@ -21,6 +21,18 @@ body {
     display: flex;
 }
 
+#form input,
+#form button {
+    flex-basis: 70%;
+    background-color: #0b0b0b;
+    outline: none;
+    border: none;
+    color: #fff;
+    box-shadow: 0 0 .5rem rgba(255, 255, 255, .1);
+    border-radius: .5rem 0 0 .5rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
 
 .container {
     display: flex;
