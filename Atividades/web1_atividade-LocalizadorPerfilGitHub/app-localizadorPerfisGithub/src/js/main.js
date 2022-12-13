@@ -1,4 +1,4 @@
-import "@picocss/pico";
+// import "@picocss/pico";
 
 // recebendo a API em uma constante
 const APIGITHUB = "https://api.github.com/users/";
