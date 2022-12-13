@@ -7,6 +7,7 @@ import {
 
 const form = document.querySelector("#cartao");
 
+// Aqui é o formulário onde se preenche com as informações do cartão
 const numCartao = document.querySelector("#numero-cartao");
 const portadorCartao = document.querySelector("#texto-nome");
 const validadeCartao = document.querySelector("#texto-valido-ate");
@@ -16,6 +17,9 @@ const numCartaoText = document.querySelector(".numeroValor");
 const portadorCartaoText = document.querySelector(".nomeValor");
 const validadeCartaoText = document.querySelector(".validade-ate");
 const cvcCartaoText = document.querySelector(".cvcValor");
+
+
+
 
 // Funcão para formatar e validar o número do cartão
 numCartao.addEventListener("keyup", (e) => {
