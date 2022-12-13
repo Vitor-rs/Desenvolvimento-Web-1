@@ -97,7 +97,7 @@ body {
 
 /* Pesquisei este mediaquery no MDN da Mozilla para deixar o layout responsivo */
 @media only screen and (max-width: 600px) {
-    .user-box {
+    .usuario-box {
         flex-direction: column;
     }
 
@@ -107,11 +107,11 @@ body {
         text-align: center;
     }
 
-    .user-info {
+    .info-usuario {
         margin-left: 0;
     }
 
-    .user-info ul {
+    .info-usuario ul {
         width: 100%;
     }
 
