@@ -29,8 +29,15 @@ body {
     padding: 30px;
     display: flex;
     background-color: #ffff;
+    /* O box-shadow gerei em um site pois ainda não entendo profundamente seu funcionamento */
     box-shadow: 0 8px 36px rgb(67 67 67 / 6%);
     border-radius: 10px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .card {
