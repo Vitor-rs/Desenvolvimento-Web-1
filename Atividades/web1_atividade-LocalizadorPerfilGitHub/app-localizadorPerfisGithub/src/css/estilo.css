@@ -91,3 +91,7 @@ body {
     color: #6666;
 }
 
+#form input:focus {
+    outline: none;
+}
+
