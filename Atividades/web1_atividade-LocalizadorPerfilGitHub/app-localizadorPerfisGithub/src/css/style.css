@@ -137,3 +137,9 @@ body {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
