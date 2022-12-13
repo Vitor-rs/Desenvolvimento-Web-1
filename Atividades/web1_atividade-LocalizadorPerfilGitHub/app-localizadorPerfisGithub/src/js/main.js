@@ -8,11 +8,16 @@ const form = document.querySelector("#form");
 const pesquisa = document.querySelector("pesquisaBox");
 
 // Função que capta a API
-async function gerUsuario(usuario) {
+async function getUsuario(usuario) {
     const response = await fetch(APIGITHUB + usuario);
     const responseDado = await response.json();
 }
 
+
+// Função para mostrar o resultado
+function getInfoUsuario() {
+    
+}
 
 
 
