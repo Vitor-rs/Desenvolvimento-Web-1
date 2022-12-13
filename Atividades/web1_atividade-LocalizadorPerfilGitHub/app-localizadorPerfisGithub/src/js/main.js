@@ -11,21 +11,7 @@ const pesquisar = document.querySelector("pesquisar");
 // método para injetar uma template string do card do usuário
 const criarCardUser = (user) => {
     const cardHTML = `
-     <div class="card">
-        <div>
-            <img src="${user.avatar_url}" class="avatar" alt="${user.name}">
-        </div>
-        <div class="info-user">
-            <h2>${user.name}</h2>
-            <p>${user.bio}</p>
-            <ul>
-                <li>${user.followers}<strong>Seguidores</strong></li>
-                <li>${user.following}<strong>Seguindo</strong></li>
-                <li>${user.public_repos}<strong>Repositórios</strong></li>
-            </ul>
-            <div class="repo" id="repos">ABC</div>
-        </div>
-    </div>        
+           
     `;
     main.innerHTML = cardHTML;
 };
