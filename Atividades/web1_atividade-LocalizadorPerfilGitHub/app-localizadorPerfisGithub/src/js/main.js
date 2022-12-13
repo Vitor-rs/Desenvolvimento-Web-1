@@ -9,15 +9,31 @@ const pesquisa = document.querySelector("pesquisaBox");
 
 // Função que capta a API
 async function getUsuario(usuario) {
-    const response = await fetch(APIGITHUB + usuario);
-    const responseDado = await response.json();
+  const response = await fetch(APIGITHUB + usuario);
+  const responseDado = await response.json();
 }
-
 
 // Função para mostrar o resultado
-function getInfoUsuario() {
-    
+function getInfoUsuario(usuario) {
+  const usuarioBox = `
+        <div class="usuario-box">
+            <div class="foto-avatar">
+                <a href="${usuario.html_url}" target="_blank">
+                    <img src="${user.avatar_url}" class="avatar" alt="${usuario.name}"></img>
+                </a>
+            </div>
+            <div class="info-usuario">
+                <h2>${usuario.name}</h2>
+                <div class="bio-usuario">
+                    <p>${usuario.bio}</p>
+                    <a href="${usuario.html_url}" target="_blank">Ver perfil ></a>
+                </div>
+                <ul class="meta-dados">
+                    <li>${usuario.followers} <strong>Seguidores</strong></li>
+                    <li>${usuario.following} <strong>Seguindo</strong></li>
+                    <li>${usuario.public_repos} <strong>Repositórios</strong></li>
+                </ul>
+            </div>
+        </div>
+    `;
 }
-
-
-
