@@ -25,7 +25,13 @@ body {
     margin: 0 auto;
 }
 
-
+.usuario-box{
+    padding: 30px;
+    display: flex;
+    background-color: #ffff;
+    box-shadow: 0 8px 36px rgb(67 67 67 / 6%);
+    border-radius: 10px;
+}
 
 .card {
     max-width: 800px;
