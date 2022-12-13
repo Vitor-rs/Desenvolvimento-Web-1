@@ -25,40 +25,7 @@ body {
     margin: 0 auto;
 }
 
-.form-user input {
-    width: 100%;
-    /* ocupando 100% da largura do elemento pai */
-    display: block;
-    /* block para distribuir como blocos */
 
-    /* fundo do input */
-    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
-    /* sombra do imput */
-    box-shadow: 0 10px 15px -7px rgba(0, 0, 0, 0.60);
-
-    /* borda */
-    border: none;
-    border-radius: 10px;
-
-    /* fonte */
-    color: #ffff;
-
-    padding: 1rem;
-    /* medida usando o tamanho da fonte do elemento HTML */
-    margin-bottom: 2rem;
-
-    font-family: inherit;
-    /* herdando as fontes de forma iterativa */
-    font-size: 1.1rem;
-}
-
-Não estou conseguindo customizar esta parte comentada .form-user input:focus {
-    outline: none;
-}
-
-.form-user input::placeholder {
-    color: #fff;
-}
 
 .card {
     max-width: 800px;
