@@ -8,12 +8,12 @@
 }
 
 body {
+    
+    display: grid;
+    place-items: center;
     /* Unidade de medida relativa em relação à altura do elemento pai: vh => viewport's heigh */
-    height: 100vh;
-    /* Unidade de medida relativa em relação à largura do elemento pai: vw => viewport's width */
-    width: 100vw;
-    background-color: #ffff;
-    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    background-color: #151515;
 }
 
 .container {
