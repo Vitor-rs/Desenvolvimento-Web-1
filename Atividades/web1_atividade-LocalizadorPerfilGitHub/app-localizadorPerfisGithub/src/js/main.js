@@ -20,7 +20,7 @@ function getInfoUsuario(usuario) {
         <div class="usuario-box">
             <div class="foto-avatar">
                 <a href="${usuario.html_url}" target="_blank">
-                    <img src="${user.avatar_url}" class="avatar" alt="${usuario.name}"></img>
+                    <img src="${usuario.avatar_url}" class="avatar" alt="${usuario.name}"></img>
                 </a>
             </div>
             <div class="info-usuario">
@@ -46,8 +46,8 @@ form.addEventListener("submit", (e) => {
   const usuario = pesquisa.value;
 
   if (usuario) {
-    getUser(usuario);
-    pesquisa.value = "";
+    getUsuario(usuario);
+    pesquisa.value = '';
   }
 });
 
