@@ -11,6 +11,7 @@ const pesquisa = document.querySelector("pesquisaBox");
 async function getUsuario(usuario) {
   const response = await fetch(APIGITHUB + usuario);
   const responseDado = await response.json();
+  return getInfoUsuario(responseDado);
 }
 
 // Função para mostrar o resultado
