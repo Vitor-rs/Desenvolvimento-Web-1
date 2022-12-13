@@ -72,3 +72,7 @@ body {
     width: 300px;
     padding: 0;
 }
+
+.info-usuario ul li {
+    list-style: none;
+}
