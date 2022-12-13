@@ -112,3 +112,10 @@ body {
     color: rgba(255, 255, 255, .7);
 }
 
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #006eff;
+    margin-top: 1rem;
+    position: relative;
+}
