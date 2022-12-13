@@ -61,4 +61,7 @@ body {
     font-size: 13px;
 }
 
-
+.bio-usuario a:hover {
+    background: #BD1E26;
+    color: #ffff;
+}
