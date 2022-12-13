@@ -81,3 +81,8 @@ body {
     margin: .3rem 0;
 }
 
+.info h2,
+.info p {
+    text-align: center;
+    color: #fff;
+}
