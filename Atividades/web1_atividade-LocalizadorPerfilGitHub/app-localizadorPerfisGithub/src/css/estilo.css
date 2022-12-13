@@ -87,3 +87,7 @@ body {
     border: none;
 }
 
+#form input::placeholder {
+    color: #6666;
+}
+
