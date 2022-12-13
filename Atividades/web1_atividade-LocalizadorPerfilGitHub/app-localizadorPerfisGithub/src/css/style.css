@@ -86,3 +86,12 @@ body {
     text-align: center;
     color: #fff;
 }
+
+.info h2 {
+    margin-top: 1rem;
+}
+
+.info p {
+    color: rgba(255, 255, 255, .7);
+}
+
