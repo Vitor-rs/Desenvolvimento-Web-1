@@ -100,3 +100,15 @@ body {
     column-gap: 1.5rem;
 }
 
+.elemento {
+    color: #fff;
+}
+
+.elemento span:first-of-type {
+    font-weight: 600;
+}
+
+.elemento span:last-of-type {
+    color: rgba(255, 255, 255, .7);
+}
+
