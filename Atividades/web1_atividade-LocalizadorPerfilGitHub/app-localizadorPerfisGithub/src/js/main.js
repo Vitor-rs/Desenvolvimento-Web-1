@@ -37,4 +37,17 @@ function getInfoUsuario(usuario) {
             </div>
         </div>
     `;
+    perfil.innerHTML = usuarioBox;
 }
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const usuario = pesquisa.value;
+
+  if (usuario) {
+    getUser(user);
+    pesquisa.value = "";
+  }
+});
+
