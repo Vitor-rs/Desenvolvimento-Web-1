@@ -70,3 +70,9 @@ body {
     box-shadow: 0 0 .5rem rgba(255, 255, 255, .3);
     outline: 1px solid #fff;
 }
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
