@@ -132,3 +132,8 @@ body {
     transform-origin: right;
     transition: 200ms ease-in-out transform;
 }
+
+.card a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
