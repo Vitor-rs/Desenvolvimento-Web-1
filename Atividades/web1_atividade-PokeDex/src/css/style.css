@@ -51,3 +51,8 @@ input {
     width: 180px;
     margin: 10px auto;
 }
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+}
