@@ -11,7 +11,9 @@ body {
     display: grid;
     place-items: center;
     min-height: 100vh;
-    background-color: #151515;
+
+    /* Usei o site cssgradient.io para gerar a cor abaixo */
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
 
 .form-pesquisa {
@@ -23,7 +25,7 @@ body {
 .form-pesquisa input,
 .form-pesquisa button {
     flex-basis: 70%;
-    background-color: #0b0b0b;
+    background: linear-gradient(to right, #141e30, #243b55);
     outline: none;
     border: none;
     color: #fff;
@@ -51,7 +53,7 @@ body {
 
 .card {
     width: clamp(280px, 90vw, 400px);
-    background-color: #0b0b0b;
+    background: linear-gradient(to right, #141e30, #243b55);
     box-shadow: 0 0 1rem rgba(255, 255, 255, .1);
     margin-top: 2rem;
     border-radius: .5rem;

@@ -19,6 +19,7 @@ btn.addEventListener("click", async () => {
 
   if (!resultadoPesquisa.login) {
     alert("Usuário inexistente");
+    location.reload(); // usei este método para atualizar a ppágina
   } else {
     card.innerHTML = `
             <div class="avatar">
@@ -39,10 +40,11 @@ btn.addEventListener("click", async () => {
                 </div>
                 <div class="elemento">
                     <span>${resultadoPesquisa.public_repos}</span>
-                    <span>Respositório(s)</span>
+                    <span>Repositório(s)</span>
                 </div>
             </div>
             <a href="${resultadoPesquisa.html_url}" target="_blank">Visitar perfil > </a>
         `;
   }
+
 });
