@@ -32,10 +32,10 @@ const tipoCores = {
 
 
 // Função que capta a API do Pokemon
-const getPokemon = event => {
+const getPokemon = e => {
     // prevenir a ação padrão de submit
-    event.preventDefault();
-    const { valor } = event.target.pokemon;
+    e.preDefault();
+    const { valor } = e.target.pokemon;
     //console.log(valor)
     // garantindo que o que for digitado esteja em minúsculo
     fetch(`https://pokeapi.co/api/v2/pokemon/${valor.toLowerCase()}`)
