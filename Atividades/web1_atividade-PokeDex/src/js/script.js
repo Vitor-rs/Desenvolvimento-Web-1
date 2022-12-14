@@ -1,5 +1,6 @@
 import "../css/style.css";
 
+// Aqui usei o recurso de atributo customizado
 const pokeCard = document.querySelector("[dado-poke-card]");
 const pokeNome = document.querySelector("[dado-poke-nome]");
 const pokeImg = document.querySelector("[dado-poke-img]");
