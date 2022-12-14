@@ -41,3 +41,9 @@ const getPokemon = (e) => {
     (dado) => dado.json()
   );
 };
+
+
+// Função para renderizar os stats do Pokemon
+const renderPokeStats = stats => {
+    
+}
