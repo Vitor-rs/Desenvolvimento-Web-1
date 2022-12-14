@@ -31,15 +31,13 @@ const typeColors = {
 };
 
 // Função que capta a API do Pokemon
-const getPokemon = (e) => {
-  // prevenir a ação padrão de submit
-  e.preDefault();
-  const { valor } = e.target.pokemon;
-  //console.log(valor)
-  // garantindo que o que for digitado esteja em minúsculo
-  fetch(`https://pokeapi.co/api/v2/pokemon/${valor.toLowerCase()}`).then(
-    (dado) => dado.json()
-  );
+const getPokemon = (event) => {
+  event.preventDefault();
+  const { value } = event.target.pokemon;
+  fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)
+    .then((data) => data.json())
+    .then((response) => renderPokemonData(response))
+    .catch((err) => renderNotFound());
 };
 
 // Função para captar os dados do Pokemon
@@ -53,6 +51,16 @@ const renderPokemonData = (data) => {
   setCardColor(types);
   renderPokemonTypes(types);
   renderPokemonStats(stats);
+};
+
+// Função para setar as cores correspondentes aos Pokemons
+const setCardColor = (types) => {
+  const colorOne = typeColors[types[0].type.name];
+  const colorTwo = types[1]
+    ? typeColors[types[1].type.name]
+    : typeColors.default;
+  pokeImg.style.background = `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+  pokeImg.style.backgroundSize = " 5px 5px";
 };
 
 // Função para renderizar os tipos de Pokemon
@@ -79,4 +87,14 @@ const renderPokemonStats = (stats) => {
     statElement.appendChild(statElementAmount);
     pokeStats.appendChild(statElement);
   });
+};
+
+// Função para mostrar aviso de Pokemon inexistente
+const renderNotFound = () => {
+  pokeName.textContent = "No encontrado";
+  pokeImg.setAttribute("src", "poke-shadow.png");
+  pokeImg.style.background = "#fff";
+  pokeTypes.innerHTML = "";
+  pokeStats.innerHTML = "";
+  pokeId.textContent = "";
 };
