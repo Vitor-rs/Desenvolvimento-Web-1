@@ -1,12 +1,13 @@
 
 
+const APIGITHUB = "https://api.github.com/users/";
 const input = document.querySelector("input");
 const btn = document.querySelector("button");
 const card = document.querySelector(".card");
 
 // Recebendo a API do Github do usuário
 async function usuario(usuario) {
-  const response = await fetch(`https://api.github.com/users/${usuario}`);
+  const response = await fetch(APIGITHUB + usuario);
   const responseDados = await response.json();
   return responseDados; // a const responseDados irá para a const resultadoPesquisa
 }
