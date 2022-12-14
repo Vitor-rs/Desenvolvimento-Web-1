@@ -65,5 +65,9 @@ input {
 }
 
 .poke-stats div {
-    
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
 }
