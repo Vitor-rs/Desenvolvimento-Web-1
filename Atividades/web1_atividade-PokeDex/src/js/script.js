@@ -43,29 +43,27 @@ const getPokemon = (e) => {
 };
 
 // Função para renderizar os tipos de Pokemon
-const renderPokeTipos = (tipos) => {
-  pokeTipos.innerHTML = "";
-  tipos.forEach((type) => {
-    const elementoTipoTexto = document.createElement("div");
-    elementoTipoTexto.style.color = typeColors[type.type.name];
-    elementoTipoTexto.textContent = type.type.name;
-    poketipos.appendChild(elementoTipoTexto);
+const renderPokemonTypes = (types) => {
+  pokeTypes.innerHTML = "";
+  types.forEach((type) => {
+    const typeTextElement = document.createElement("div");
+    typeTextElement.style.color = typeColors[type.type.name];
+    typeTextElement.textContent = type.type.name;
+    pokeTypes.appendChild(typeTextElement);
   });
 };
 
 // Função para renderizar os stats do Pokemon
-const renderPokeStats = (stats) => {
+const renderPokemonStats = (stats) => {
   pokeStats.innerHTML = "";
-  // Iteração por cada elemento
   stats.forEach((stat) => {
-    const elementoStat = document.createElement("div");
-    const elementoStatNome = document.createElement("div");
-    const elementoStatQuantidade = document.createElement("div");
-
-    elementoStatNome.textContent = stat.stat.name;
-    elementoStatQuantidade.textContent = stat.base_stat;
-    elementoStat.appendChild(elementoStatNome);
-    elementoStat.appendChild(elementoStatQuantidade);
-    pokeStats.appendChild(elementoStat);
+    const statElement = document.createElement("div");
+    const statElementName = document.createElement("div");
+    const statElementAmount = document.createElement("div");
+    statElementName.textContent = stat.stat.name;
+    statElementAmount.textContent = stat.base_stat;
+    statElement.appendChild(statElementName);
+    statElement.appendChild(statElementAmount);
+    pokeStats.appendChild(statElement);
   });
 };
