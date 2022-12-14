@@ -1,4 +1,6 @@
 export default {
   root: "src",
-  build: { outDir: "../dist" },
+  build: {
+    outDir: "../dist"
+  },
 };
