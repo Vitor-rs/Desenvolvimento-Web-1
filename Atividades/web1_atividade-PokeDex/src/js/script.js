@@ -1,16 +1,16 @@
 import "../css/style.css";
 
 // Aqui usei o recurso de atributo customizado
-const pokeCard = document.querySelector("[dado-poke-card]");
-const pokeNome = document.querySelector("[dado-poke-nome]");
-const pokeImg = document.querySelector("[dado-poke-img]");
-const pokeImgContainer = document.querySelector("[dado-poke-img-container]");
-const pokeId = document.querySelector("[dado-poke-id]");
-const pokeTipos = document.querySelector("[dado-poke-tipos]");
-const pokeStats = document.querySelector("[dado-poke-stats]");
+const pokeCard = document.querySelector("[data-poke-card]");
+const pokeName = document.querySelector("[data-poke-name]");
+const pokeImg = document.querySelector("[data-poke-img]");
+const pokeImgContainer = document.querySelector("[data-poke-img-container]");
+const pokeId = document.querySelector("[data-poke-id]");
+const pokeTypes = document.querySelector("[data-poke-types]");
+const pokeStats = document.querySelector("[data-poke-stats]");
 
 // Vetor que contém as cores dos tipos de pokemom
-const tipoCores = {
+const typeColors = {
   electric: "#FFEA70",
   normal: "#B09398",
   fire: "#FF675C",
@@ -40,6 +40,19 @@ const getPokemon = (e) => {
   fetch(`https://pokeapi.co/api/v2/pokemon/${valor.toLowerCase()}`).then(
     (dado) => dado.json()
   );
+};
+
+// Função para captar os dados do Pokemon
+const renderPokemonData = (data) => {
+  const sprite = data.sprites.front_default;
+  const { stats, types } = data;
+
+  pokeName.textContent = data.name;
+  pokeImg.setAttribute("src", sprite);
+  pokeId.textContent = `Nº ${data.id}`;
+  setCardColor(types);
+  renderPokemonTypes(types);
+  renderPokemonStats(stats);
 };
 
 // Função para renderizar os tipos de Pokemon
