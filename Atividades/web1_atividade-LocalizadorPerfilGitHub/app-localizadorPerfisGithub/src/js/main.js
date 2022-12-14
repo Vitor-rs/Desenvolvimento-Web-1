@@ -21,19 +21,15 @@ async function user(username) {
 
 
 
+const perfil = document.querySelector("#perfil-Usuario");
+const form = document.querySelector("#form");
+const pesquisa = document.querySelector("#pesquisaBox");
 
-// Mapeando e recebendo os repositórios do usuário através da API
-/*async function add_repo() {
-    const reposData = await repos(input.value)
-    console.log(reposData)
-    repos_container.innerHTML = reposData.map(repo => {
-        return `
-            <div class="card">
-                <h2>${repo.name}</h2>
-                <a href="${repo.clone_url}" target="_blank">Take a look at this repo ></a>
-            </div>
-        `
-    }).join('') // tirando o ponto e vigola
+// Função que capta a API
+/*async function getUsuario(usuario) {
+  const response = await fetch(APIGITHUB + usuario);
+  const responseDado = await response.json();
+  return getInfoUsuario(responseDado);
 }*/
 
 // Botão que aciona toda a cadeia de eventos
