@@ -35,4 +35,9 @@ const tipoCores = {
 const getPokemon = event => {
     // prevenir a ação padrão de submit
     event.preventDefault();
+    const { value } = event.target.pokemon;
+    //console.log(value)
+    // garantindo que o que for digitado esteja em minúsculo
+    fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`);
+    
 }
