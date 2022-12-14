@@ -47,9 +47,11 @@ const renderPokeStats = (stats) => {
   pokeStats.innerHTML = "";
   // Iteração por cada elemento
   stats.forEach((stat) => {
+
     const elementoStat = document.createElement("div");
     const elementoStatNome = document.createElement("div");
     const elementoStatQuantidade = document.createElement("div");
+    
     elementoStatNome.textContent = stat.stat.name;
     elementoStatQuantidade.textContent = stat.base_stat;
     elementoStat.appendChild(elementoStatNome);
