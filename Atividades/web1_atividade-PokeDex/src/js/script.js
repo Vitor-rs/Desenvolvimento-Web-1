@@ -10,7 +10,7 @@ const pokeTipos = document.querySelector("[dado-poke-tipos]");
 const pokeStats = document.querySelector("[dado-poke-stats]");
 
 // Vetor que contém as cores dos tipos de pokemom
-const typeColors = {
+const tipoCores = {
   electric: "#FFEA70",
   normal: "#B09398",
   fire: "#FF675C",
