@@ -1,4 +1,4 @@
-
+import swal from "sweetalert";
 
 const APIGITHUB = "https://api.github.com/users/";
 const input = document.querySelector("input");
@@ -21,8 +21,9 @@ btn.addEventListener("click", async () => {
   console.log(resultadoPesquisa);
 
   if (!resultadoPesquisa.login) {
-    alert("Usuário inexistente");
-    location.reload(); // usei este método para atualizar a ppágina
+    swal("Atenção!", "Usuário inexistente.", "error").then(function () {
+      location.reload();
+    });
   } else {
     card.innerHTML = `
             <div class="avatar">
@@ -49,5 +50,4 @@ btn.addEventListener("click", async () => {
             <a href="${resultadoPesquisa.html_url}" target="_blank">Visitar perfil > </a>
         `;
   }
-
 });
