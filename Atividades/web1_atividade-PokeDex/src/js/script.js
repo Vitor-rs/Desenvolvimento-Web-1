@@ -9,3 +9,6 @@ const pokeId = document.querySelector("[dado-poke-id]");
 const pokeTipos = document.querySelector("[dado-poke-tipos]");
 const pokeStats = document.querySelector("[dado-poke-stats]");
 
+const typeColors = {
+  
+};
