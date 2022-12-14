@@ -33,6 +33,6 @@ const tipoCores = {
 
 // Função que capta a API do Pokemon
 const getPokemon = event => {
-    
+    // prevenir a ação padrão de submit
     event.preventDefault();
 }
