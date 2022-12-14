@@ -18,7 +18,6 @@ async function consultarCep(cep) {
 
   let response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
 
-
   let dadosCep = await response.json();
 
   console.log(response)
