@@ -11,23 +11,23 @@ const pokeStats = document.querySelector("[dado-poke-stats]");
 
 // Vetor que contém as cores dos tipos de pokemom
 const tipoCores = {
-  electric: "#FFEA70",
-  normal: "#B09398",
-  fire: "#FF675C",
-  water: "#0596C7",
-  ice: "#AFEAFD",
-  rock: "#999799",
-  flying: "#7AE7C7",
-  grass: "#4A9681",
-  psychic: "#FFC6D9",
-  ghost: "#561D25",
-  bug: "#A2FAA3",
-  poison: "#795663",
-  ground: "#D2B074",
-  dragon: "#DA627D",
-  steel: "#1D8A99",
-  fighting: "#2F2F2F",
-  default: "#2A1A1F",
+  Elétrico: "#FFEA70",
+  Normal: "#B09398",
+  Fogo: "#FF675C",
+  Água: "#0596C7",
+  Gelo: "#AFEAFD",
+  Rocha: "#999799",
+  Voar: "#7AE7C7",
+  Mato: "#4A9681",
+  Psíquico: "#FFC6D9",
+  Fantasma: "#561D25",
+  Inseto: "#A2FAA3",
+  Veneno: "#795663",
+  Terra: "#D2B074",
+  Dragão: "#DA627D",
+  Aço: "#1D8A99",
+  Luta: "#2F2F2F",
+  Padrão: "#2A1A1F",
 };
 
 // Função que capta a API do Pokemon
@@ -42,16 +42,26 @@ const getPokemon = (e) => {
   );
 };
 
+// Função para renderizar os tipos de Pokemon
+const renderPokeTipos = (tipos) => {
+  pokeTipos.innerHTML = "";
+  tipos.forEach((type) => {
+    const elementoTipoTexto = document.createElement("div");
+    elementoTipoTexto.style.color = typeColors[type.type.name];
+    elementoTipoTexto.textContent = type.type.name;
+    poketipos.appendChild(elementoTipoTexto);
+  });
+};
+
 // Função para renderizar os stats do Pokemon
 const renderPokeStats = (stats) => {
   pokeStats.innerHTML = "";
   // Iteração por cada elemento
   stats.forEach((stat) => {
-
     const elementoStat = document.createElement("div");
     const elementoStatNome = document.createElement("div");
     const elementoStatQuantidade = document.createElement("div");
-    
+
     elementoStatNome.textContent = stat.stat.name;
     elementoStatQuantidade.textContent = stat.base_stat;
     elementoStat.appendChild(elementoStatNome);
