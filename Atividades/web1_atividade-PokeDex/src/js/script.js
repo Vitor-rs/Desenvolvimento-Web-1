@@ -29,3 +29,10 @@ const tipoCores = {
   fighting: "#2F2F2F",
   default: "#2A1A1F",
 };
+
+
+// Função que capta a API do Pokemon
+const getPokemon = event => {
+    
+    event.preventDefault();
+}
