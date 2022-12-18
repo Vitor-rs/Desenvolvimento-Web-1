@@ -7,25 +7,27 @@ const card = document.querySelector(".card");
 
 // Recebendo a API do Github do usuário
 async function usuario(usuario) {
-  const response = await fetch(APIGITHUB + usuario);
-  const responseDados = await response.json();
-  return responseDados; // a const responseDados irá para a const resultadoPesquisa
+    const response = await fetch(APIGITHUB + usuario);
+    /* os dados do reponse.json() irá para a const resultadoPesquisa no btn.addEventListener
+       a partir do usuario(input.value) */
+    return await response.json();
 }
 
 // Botão que aciona toda a cadeia de eventos
 btn.addEventListener("click", async () => {
-  const valor_input = input.value;
-  const resultadoPesquisa = await usuario(valor_input); // recebe a const responseDados da função
+    const resultadoPesquisa = await usuario(input.value); // recebe a const responseDados da função
 
-  // Deixei o console.log só para analisar o código ao inspecionar
-  console.log(resultadoPesquisa);
+    // Deixei o console.log só para analisar o código ao inspecionar
+    console.log(resultadoPesquisa);
 
-  if (!resultadoPesquisa.login) {
-    swal("Atenção!", "Usuário inexistente.", "error").then(function () {
-      location.reload();
-    });
-  } else {
-    card.innerHTML = `
+    // Usando o Sweet Alert para personalizar o alert do navegador ao não encontrar o usuário
+    if (!resultadoPesquisa.login) {
+        swal("Atenção!", "Usuário inexistente.", "error").then(function () {
+            location.reload();
+        });
+    // Se o usuário existir, ele retornará a template String abaixo
+    } else {
+        card.innerHTML = `
             <div class="avatar">
                 <img src="${resultadoPesquisa.avatar_url}" alt="">
             </div>
@@ -49,5 +51,5 @@ btn.addEventListener("click", async () => {
             </div>
             <a href="${resultadoPesquisa.html_url}" target="_blank">Visitar perfil > </a>
         `;
-  }
+    }
 });
